@@ -1,0 +1,142 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.Main
+{
+    width: 100%;
+    height:100%;
+    background-image: url(images.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.CalcMain{
+width: 400px;
+height:500px;
+border:1px solid black;
+display: flex;
+ border-radius: 24px;
+ background: #1e1e1e;
+ border: none;
+ flex-direction: column;
+}
+.CalcDisplay{
+background-color:gray;
+color: green;
+margin-bottom: 40px;
+text-align: right;
+min-height: 90px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            content:"0";
+            width:350px
+            ;margin-left: 25px;
+            margin-top:10px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 26px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            align-items: center;
+
+
+}
+.Buttons{
+ display: flex;
+
+ justify-content: center;
+ align-items: start;
+ margin-top: 40px;
+ gap: 15px;
+
+}
+.buttons{
+height: 35px;
+width: 35px;
+gap:40px;
+}
+.row{
+    display: flex;
+gap: 15px;
+margin-bottom: 30px;
+}
+ .row .buttons {
+            height: 90px;
+            width: 70px;
+            border: none;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            background: #4a4a4a;
+            color: #ffffff;
+            box-shadow: 0 4px 0 #1a1a1a;
+        margin-bottom: -25px;
+    column-gap: 15px;}
+            .rowf{
+                 display: flex;
+    flex-direction: column;
+    gap: 15px;
+align-items: center;
+}
+    
+.CalcFunct {
+    height: 34px;
+    width: 50px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 600;
+    background: #4a4a4a;
+    color: white;
+}
+.num{display: flex;
+flex-direction: column;
+}
+.buttons:hover{
+    transform: scale(1.09);
+}
+.CalcFunct:hover{
+
+        transform: scale(1.09);
+}
+@media (max-width: 500px) {
+    .CalcMain {
+        width: 90%;
+        height: 500px;
+    }
+
+    .CalcDisplay {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 400px) {
+    .row .buttons {
+        width: 55px;
+        height: 70px;
+    }
+
+    .CalcFunct {
+        width: 40px;
+        height: 40px;
+    }
+
+    .row {
+        gap: 10px;
+    }
+
+    .Buttons {
+        gap: 10px;
+    }
+}
